@@ -1,0 +1,33 @@
+{
+  "name": "article_serializable",
+  "version": "1.0.0",
+  "description": "A small project showing serializable transactions usage and capability",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michelmilezzi/article_serializable.git"
+  },
+  "keywords": [
+    "postgres",
+    "concurrency"
+  ],
+  "author": "Michel Luiz Milezzi",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/michelmilezzi/article_serializable/issues"
+  },
+  "homepage": "https://github.com/michelmilezzi/article_serializable#readme",
+  "dependencies": {
+    "express": "^4.21.1",
+    "pg": "^8.13.0",
+    "sequelize": "^6.37.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "sequelize-cli": "^6.6.2"
+  }
+}
