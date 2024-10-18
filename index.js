@@ -11,13 +11,16 @@ app.use(bodyParser.json());
 
 app.post("/withdrawals", async (req, res, next) => {
   try {
-    const { amount, user, effective_date } = req.body;
+    const { serializable = false } = req.query;
+    const { amount, user } = req.body;
 
-    const newWithdrawal = await withdrawalService.processWithdrawal({
-      amount,
-      user,
-      effective_date,
-    });
+    const newWithdrawal = await withdrawalService.handleWithdrawalRequest(
+      {
+        amount,
+        user,
+      },
+      serializable
+    );
 
     return res.status(201).json(newWithdrawal);
   } catch (error) {
