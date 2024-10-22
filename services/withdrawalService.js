@@ -32,7 +32,7 @@ class WithdrawalService {
   async handleWithdrawalRequestSequentially(withdrawal) {
     let attempt = 0,
       delay = 1000;
-    const retries = 1; //TODO
+    const retries = 1;
 
     while (true) {
       try {
