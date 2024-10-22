@@ -66,7 +66,7 @@ To run this project, you have two options: either start the application and send
 - Now you're good to go, just issue a `npm start` to start the app
 - Then you can send requests, e.g.:
 
-```
+```bash
 curl --request POST \
   --url 'http://localhost:3000/withdrawals?serializable=false' \
   --header 'Content-Type: application/json' \
