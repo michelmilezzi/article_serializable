@@ -13,7 +13,7 @@ This small app emulates a bank account withdrawal process.
 
 This endpoint allows users to initiate a withdrawal request. If you pass `serializable` parameter as false (or don't pass it at all), the withdrawal request will be handled using `READ COMMITED` isolation level, which will fail validating the daily withdrawal limit of $5000 in case of two or more concurrent requests for same user. Otherwise, if you pass `serializable` as true, the request will be handle using `SERIALIZABLE` isolation level, protecting the database from an inconsistent state.
 
-Be aware that this endpoint has a sleep of 5 seconds before committing changes on database. This is needed to reproduce the scenario without having a high load environment. You can check it at [WithdrawalService](services/withdrawalService.js#71).
+Be aware that this endpoint has a sleep of 5 seconds before committing changes on database. This is needed to reproduce the scenario without having a high load environment. You can check it at [WithdrawalService](services/withdrawalService.js#L71).
 
 #### HTTP Method
 
