@@ -1,6 +1,8 @@
 # Serializable Isolation Level explained
 
-<img src="resources/cover.png" alt="Cover">
+<p align="center">
+    <img src="resources/cover.png" alt="Cover">
+</p>
 
 > A small project showing serializable transactions usage and capability, made as part of this article https://www.linkedin.com/pulse/draft/preview/7249171219676057601 (WIP).
 > The goal of this project is to have a self-contained test showing a possible use-case of SERIALIZABLE Isolation Level.
