@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const errorHandling = require("./middleware/errorHandling");
 const WithdrawalService = require("./services/withdrawalService");
+require("dotenv").config();
 
 const app = express();
 const port = 3000;
